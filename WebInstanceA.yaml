@@ -8,9 +8,9 @@ WebInstanceA:
           Iops: 3000
           DeleteOnTermination: true
           VolumeSize: 8
-    ImageId: "replace with an ami value from your console"
-    InstanceType: t2.micro
-    KeyName: cba-web-KP
+      ImageId: "replace with an ami value from your console"
+      InstanceType: t2.micro
+      KeyName: "replace with a keypair name on your console"
     SecurityGroupIds: 
       - !Ref SecurityGroup
     SubnetId: !Ref PublicSubnet
